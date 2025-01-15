@@ -1,1 +1,1 @@
-
+sliderImagesWidth = document.getElementById("sliderImages").style.width;

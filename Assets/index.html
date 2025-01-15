@@ -1,168 +1,89 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maquette 0 - Version 0</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="css/globalStyle.css">
     <meta name="description" content="">
-    
+
 </head>
+
 <body>
-<!--
-    - Header
-        - placer le CSS dans le fichier globalStyle.css
-        - si nécessaire, placer le JS dans le fichier global.js
-    - Slider 1
-        - Créer un fichier css et js correspondant au composant
-    - double cards (différence)
-        - Créer un fichier css correspondant au composant
-    - Slider experts
-        - Créer un fichier css et js correspondant au composant
-    - Slider missions
-        - Créer un fichier css et js correspondant au composant
-    - Témoignage et formulaire de recherche
-        - Créer un fichier css et js correspondant au composant
-    - Slider compétences
-        - Créer un fichier css et js correspondant au composant
-    - Encart "mission à nous confier" et Nos publications
-        - Créer un fichier css et js correspondant au composant
-    - Actualités
-        - placer le CSS dans le fichier globalStyle.css
-        - si nécessaire, placer le JS dans le fichier global.js
-    - Footer
-        - placer le CSS dans le fichier globalStyle.css
-        - si nécessaire, placer le JS dans le fichier global.js
--->
-
-
-
-<!-- ------------------------------------------------------>
-<!-- ------------------ HEADER ---------------------------->
-<!-- ------------------------------------------------------>
-<header>
-    <div>
-        <p>Le logo</p>
-        <nav>
-            <a href="">Item 1</a>
-            <a href="">Item 2</a>
-        </nav>
-        <div>
-            <p>Rechercher</p>
-        </div>
-    </div>
-    <div>
-        <nav>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
-    </div>
-</header>
-<!-- ------------------------------------------------------>
-<!-- ------------------ END HEADER ------------------------>
-<!-- ------------------------------------------------------>
-
-
-<div id="home">
-
-
-
-
     <!-- ------------------------------------------------------>
-    <!-- ------------------ SLIDER 1 -------------------------->
+    <!-- ------------------ HEADER ---------------------------->
     <!-- ------------------------------------------------------>
     <header>
-        <div id="home-slider">
+        <div>
+            <p>Le logo</p>
+            <nav>
+                <a href="">Item 1</a>
+                <a href="">Item 2</a>
+            </nav>
+            <div>
+                <p>Rechercher</p>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <a href=""></a>
+                <a href=""></a>
+            </nav>
         </div>
     </header>
     <!-- ------------------------------------------------------>
-    <!-- ------------------ END SLIDER 1 ---------------------->
+    <!-- ------------------ END HEADER ------------------------>
     <!-- ------------------------------------------------------>
 
 
+    <div id="home">
 
-    <!-- ------------------------------------------------------>
-    <!-- --------- double cards (différence) ------------------>
-    <!-- ------------------------------------------------------>
-    <div class="container">
+        <!-- ------------------------------------------------------>
+        <!-- ------------------ SLIDER ---------------------------->
+        <!-- ------------------------------------------------------>
+        <div id="slider">
+            <!-- slider bar -->
+            <div style="text-align:center">
+                <span class="bar" onclick="firstSlide(0)"></span>
+                <span class="bar" onclick="firstSlide(1)"></span>
+                <span class="bar" onclick="firstSlide(2)"></span>
 
-    </div>
-    <!-- ------------------------------------------------------>
-    <!-- --------- END double cards (différence) -------------->
-    <!-- ------------------------------------------------------>
+                <span class="bar" onclick="firstSlide(3)"></span>
+                <span class="bar" onclick="firstSlide(4)"></span>
+                <span class="bar" onclick="firstSlide(5)"></span>
+                <span class="bar" onclick="firstSlide(6)"></span>
+                <span class="bar" onclick="firstSlide(7)"></span>
 
+                <span class="bar" onclick="firstSlide(8)"></span>
+                <span class="bar" onclick="firstSlide(9)"></span>
+            </div>
 
-    <!-- ------------------------------------------------------>
-    <!-- ----------------- Slider experts --------------------->
-    <!-- ------------------------------------------------------>
-    <div>
-    </div>
-    <!-- ------------------------------------------------------>
-    <!-- --------------- END Slider experts ------------------->
-    <!-- ------------------------------------------------------>
+            <div class="slideContainer">
+                <img class="sliderImages sliderImagesLeft" src="Img\img1.png">
+                <img class="sliderImages sliderImagesLeft" src="Img\img2.png">
+                <img class="sliderImages sliderImagesLeft" src="Img\img3.png">
 
-
-
-    <!-- ------------------------------------------------------>
-    <!-- ----------------- Slider missions -------------------->
-    <!-- ------------------------------------------------------>
-    <div></div>
-    <!-- ------------------------------------------------------>
-    <!-- --------------- END Slider missions ------------------>
-    <!-- ------------------------------------------------------>
-
-
-
-    <!-- ------------------------------------------------------>
-    <!-- --- Témoignage et formulaire de recherche ------------>
-    <!-- ------------------------------------------------------>
-
-    <div></div>
-    
-    <!-- ------------------------------------------------------>
-    <!-- --- END Témoignage et formulaire de recherche -------->
-    <!-- ------------------------------------------------------>
+                <img class="sliderImages sliderImagesRight" src="Img\img4.png">
+                <img class="sliderImages sliderImagesRight" src="Img\img5.png">
+                <img class="sliderImages sliderImagesRight" src="Img\img1.png">
+                <img class="sliderImages sliderImagesRight" src="Img\img2.png">
+                <img class="sliderImages sliderImagesRight" src="Img\img3.png">
+                <img class="sliderImages sliderImagesRight" src="Img\img4.png">
+                <img class="sliderImages sliderImagesRight" src="Img\img5.png">
+            </div>
+        </div>
+        <!-- ------------------------------------------------------>
+        <!-- ------------------ END SLIDER ------------------------>
+        <!-- ------------------------------------------------------>
 
 
+        <!-- ---------------------------------------------------------->
+        <!------------------------ FOOTER ------------------------->
+        <!-- ---------------------------------------------------------->
 
-    <!-- ------------------------------------------------------>
-    <!-- ---------------- Slider compétences ------------------>
-    <!-- ------------------------------------------------------>
-    <div></div>
-    <!-- ------------------------------------------------------>
-    <!-- -------------- END Slider compétences ---------------->
-    <!-- ------------------------------------------------------>
+    </div> <!-- fermeture de la div id="home" -->
 
-
-
-    <!-- ---------------------------------------------------------->
-    <!---- Encart "mission à nous confier" et Nos publications ---->
-    <!-- ---------------------------------------------------------->
-    <div></div>
-    <!-- ---------------------------------------------------------->
-    <!-- END Encart "mission à nous confier" et Nos publications -->
-    <!-- ---------------------------------------------------------->
-
-
-
-
-    <!-- ---------------------------------------------------------->
-    <!------------------------ Actualités ------------------------->
-    <!-- ---------------------------------------------------------->
-        <div></div>
-    <!-- ---------------------------------------------------------->
-    <!---------------------- END Actualités ----------------------->
-    <!-- ---------------------------------------------------------->
-
-
-    
-    <!-- ---------------------------------------------------------->
-    <!------------------------ FOOTER ------------------------->
-    <!-- ---------------------------------------------------------->
-
-</div> <!-- fermeture de la div id="home" -->
-    
     <footer>
         <div class="container">
         </div>
@@ -170,10 +91,11 @@
     <!-- ---------------------------------------------------------->
     <!---------------------- END FOOTER ----------------------->
     <!-- ---------------------------------------------------------->
-    
+
 
 
 
 </body>
 <script src="main.js"></script>
+
 </html>
