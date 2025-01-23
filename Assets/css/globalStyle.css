@@ -9,7 +9,7 @@
 }
 
 .sliderImages {
-     width: 25%;
+    width: 25%;
 }
 
 .bar {
@@ -26,5 +26,10 @@
     .bar {
         height: 8px;
         width: 70px;
+    }
+
+    .sliderImages {
+        width: 15%;
+        margin-right: 20px;
     }
 }
