@@ -17,9 +17,15 @@
     height: 4px;
     width: 8%;
     background-color: #bbb;
+    border: 2px solid black;
     border-radius: 20%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.highlightBar {
+    background-color: white;
+    transition: background-color 0.5s ease;
 }
 
 @media (min-width: 600px) {
@@ -29,7 +35,7 @@
     }
 
     .sliderImages {
-        width: 15%;
+        width: 20%;
         margin-right: 20px;
     }
 }
