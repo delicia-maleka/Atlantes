@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maquette 0 - Version 0</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="css\globalStyle.css">
     <meta name="description" content="">
+    <link rel="icon" href="Img\logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
     
 </head>
 <body>
@@ -41,22 +44,37 @@
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
+<div id="back">
+    <img src="https://cdn.discordapp.com/attachments/1329030043141148692/1329058796131057674/marcin-kempa-3sLosN6dPoQ-unsplash-scaled.png?ex=6788f5f5&is=6787a475&hm=4c33f72dd85ed3afada052de0f1d2ad57f7906976e0bd6c4f4a606c769fbeedb&">
+</div>
+
+
 <header>
-    <div>
-        <p>Le logo</p>
-        <nav>
-            <a href="">Item 1</a>
-            <a href="">Item 2</a>
-        </nav>
-        <div>
-            <p>Rechercher</p>
+    <div id="head">
+        <img id="logo" src="Img\logo.png">
+       
+        <button class="pop">Boutiques & Restaurants</button>
+        <button class="pop">Actus & Bons plans</button>
+        <button class="pop">Infos pratiques</button>
+      
+        <div class="container">
+            <img id="recherche" src="Img\Icon_feather_search.png" >
+            <button class="pop"></button>
         </div>
-    </div>
-    <div>
-        <nav>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
+
+        <div id="rectangle">
+            <p><span id="ouvert">ouvert - </span><span id="heure">9:30 </span><span id="a">à </span><span id="heure">19:30</span></p>
+        </div>
+
+        <div id="affiche">
+            <p>Ouverture exceptionnelle le dimanche 12 février pour la Saint-Valentin</p>
+        </div>
+        <div id="reseau">
+            <p>#enmodepartage</p>
+            
+        </div>
+        <img id="facebook" src="Img\facebook.png">
+        <img id="twitter" src="Img\twitter.png">
     </div>
 </header>
 <!-- ------------------------------------------------------>
@@ -64,18 +82,29 @@
 <!-- ------------------------------------------------------>
 
 
-<div id="home">
-
-
-
+<div id="rectangleOrange1">
 
     <!-- ------------------------------------------------------>
     <!-- ------------------ SLIDER 1 -------------------------->
     <!-- ------------------------------------------------------>
-    <header>
-        <div id="home-slider">
-        </div>
-    </header>
+    <div id="slider1">
+       <img id="slide1" src="Img\finaleImage1.png">
+       <img id="slide2" src="Img\finaleImage3.png">
+       <img id="slide3" src="Img\finaleImage4.jpg">
+
+        <img id="prim" src="Img\primark.png">
+        <p id="MD">Mode & Déco</p>
+        <p id="Eve"><span id="even">Evènement</span> <br> <span id="dateOuvert"> Primark ouvrira ses portes le 21 Février 2023 </span></p>
+
+        <button id="img2but">En savoir plus</button>
+
+        <p id="Eve2"><span id="even2">Evènement</span> <br> <span id="dateOuvert2"> Nastygal <br>prochainement <br>dans notre <br>centre </span></p>
+    </div>
+    <div id="points">
+        <button id="point1"> </button>
+        <button id="point2"> </button>
+        <button id="point3"> </button>
+    </div>
     <!-- ------------------------------------------------------>
     <!-- ------------------ END SLIDER 1 ---------------------->
     <!-- ------------------------------------------------------>
@@ -172,8 +201,7 @@
     <!-- ---------------------------------------------------------->
     
 
-
+    <script src="Js\global.js"></script>
 
 </body>
-<script src="main.js"></script>
 </html>
