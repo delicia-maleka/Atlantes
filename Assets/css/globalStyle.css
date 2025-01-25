@@ -80,7 +80,7 @@ body {
 
 .bar {
     cursor: pointer;
-    height: 2px;
+    height: 1px;
     width: 7%;
     background-color: #bbb;
     display: inline-block;
