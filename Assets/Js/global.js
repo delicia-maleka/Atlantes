@@ -1,10 +1,20 @@
-var sliderImageWidth = document.getElementById("basicImg").offsetWidth;
-var sliderImagesMargin = document.getElementById("basicImg").style.marginRight;
+var sliderImageMargin = window.getComputedStyle(document.getElementById("basicImg")).marginRight;
+var sliderImageWidth = document.getElementById("basicImg").offsetWidth
+    + parseInt(sliderImageMargin.substring(0, sliderImageMargin.length - 2)) + 4; // 4 = whitespace
 var maxSliderOffset = -9 * sliderImageWidth;
+
+var adSliderImageMargin = window.getComputedStyle(document.getElementById("basicAdImg")).marginRight; // keeps px in the string
+var adSliderImageWidth = document.getElementById("basicAdImg").offsetWidth
++ parseInt(adSliderImageMargin.substring(0, adSliderImageMargin.length - 2)) + 4;
+var maxAdSliderOffset = -adSliderImageWidth * 13;
 
 const bars = document.querySelectorAll('.bar');
 const slider = document.querySelector('.slideContainer');
 const sliderCards = document.querySelector('.sliderCards');
+
+const adSlider = document.querySelector('.adSlideContainer')
+const adSliderCards = document.querySelector('.adSliderCards');
+
 let mouseMaintained = false;
 let cursorX;
 let currentSlide = 0;
@@ -30,13 +40,35 @@ slider.addEventListener("mousemove", (e) => {
     }
 });
 
+adSlider.addEventListener("mousedown", (e) => {
+    mouseMaintained = true;
+    cursorX = e.offsetX - adSliderCards.offsetLeft;
+});
+
+adSlider.addEventListener("mousemove", (e) => {
+    if (!mouseMaintained)
+        return;
+
+    e.preventDefault();
+
+    if (e.offsetX - cursorX < maxAdSliderOffset - 34) { // if at right limit then go left
+        adSliderCards.style.left = `-35px`;
+    }
+    else if (e.offsetX - cursorX > -35) { // if at left limit then go right
+        adSliderCards.style.left = `${maxAdSliderOffset - 35}px`;
+    }
+    else {
+        adSliderCards.style.left = `${e.offsetX - cursorX}px`
+    }
+});
+
 window.addEventListener("mouseup", () => {
     mouseMaintained = false;
 });
 
 /* slider bar */
 function firstSlide(slideIndex) {
-    sliderCards.style.left = `-${sliderImageWidth * slideIndex + sliderImagesMargin}px`;
+    sliderCards.style.left = `-${sliderImageWidth * slideIndex}px`;
     bars.forEach((bar) => {
         bar.classList.remove('highlightBar');
     });
@@ -50,7 +82,7 @@ function nextSlide() {
     else
         return;
 
-    sliderCards.style.left = `-${sliderImageWidth * currentSlide + sliderImagesMargin}px`;
+    sliderCards.style.left = `-${sliderImageWidth * currentSlide}px`;
     bars.forEach((bar) => {
         bar.classList.remove('highlightBar');
     });
@@ -63,7 +95,7 @@ function previousSlide() {
     else
         return;
 
-    sliderCards.style.left = `-${sliderImageWidth * currentSlide + sliderImagesMargin}px`;
+    sliderCards.style.left = `-${sliderImageWidth * currentSlide}px`;
     bars.forEach((bar) => {
         bar.classList.remove('highlightBar');
     });
