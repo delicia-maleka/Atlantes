@@ -43,21 +43,30 @@
         <!-- ------------------ SLIDER ---------------------------->
         <!-- ------------------------------------------------------>
         <div id="slider">
-            <!-- slider bar -->
-            <div id="sliderBar" style="text-align:center">
-                <img class="arrow arrowLeft" src="Img/Icon awesome-arrow-left.png" onclick="previousSlide()">
-                <span id="bar0" class="bar highlightBar" onclick="firstSlide(0)"></span>
-                <span id="bar1" class="bar" onclick="firstSlide(1)"></span>
-                <span id="bar2" class="bar" onclick="firstSlide(2)"></span>
-                <span id="bar3" class="bar" onclick="firstSlide(3)"></span>
-                <span id="bar4" class="bar" onclick="firstSlide(4)"></span>
-                <span id="bar5" class="bar" onclick="firstSlide(5)"></span>
-                <span id="bar6" class="bar" onclick="firstSlide(6)"></span>
-                <span id="bar7" class="bar" onclick="firstSlide(7)"></span>
-                <span id="bar8" class="bar" onclick="firstSlide(8)"></span>
-                <span id="bar9" class="bar" onclick="firstSlide(9)"></span>
-                <img class="arrow arrowRight" src="Img/Icon awesome-arrow-right.png" onclick="nextSlide()">
+            <div id="sliderIntro">
+                <p id="sliderIntroText">Actus &</p>
+                <button id="sliderIntroButton" onclick="actusBonsPlans()">Toutes les actus & bons plans</button>
             </div>
+            <!-- slider bar -->
+
+            <div id="textAndBar">
+                <p id="barText">bons plans</p>
+                <div id="sliderBar">
+                    <img class="arrow arrowLeft" src="Img/Icon awesome-arrow-left.png" onclick="previousSlide()">
+                    <span id="bar0" class="bar highlightBar" onclick="firstSlide(0)"></span>
+                    <span id="bar1" class="bar" onclick="firstSlide(1)"></span>
+                    <span id="bar2" class="bar" onclick="firstSlide(2)"></span>
+                    <span id="bar3" class="bar" onclick="firstSlide(3)"></span>
+                    <span id="bar4" class="bar" onclick="firstSlide(4)"></span>
+                    <span id="bar5" class="bar" onclick="firstSlide(5)"></span>
+                    <span id="bar6" class="bar" onclick="firstSlide(6)"></span>
+                    <span id="bar7" class="bar" onclick="firstSlide(7)"></span>
+                    <span id="bar8" class="bar" onclick="firstSlide(8)"></span>
+                    <span id="bar9" class="bar" onclick="firstSlide(9)"></span>
+                    <img class="arrow arrowRight" src="Img/Icon awesome-arrow-right.png" onclick="nextSlide()">
+                </div>
+            </div>
+            
 
             <div class="slideContainer">
                 <div class="sliderCards">

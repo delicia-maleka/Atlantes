@@ -1,3 +1,120 @@
+body {
+    background-color: red;
+}
+
+@font-face {
+    font-family: Albert Sans;
+    src: url(Fonts/AlbertSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Brush Script MT;
+    src: url(Fonts/BRUSHSCI.TTF);
+}
+
+#sliderIntro {
+    width: 86%;
+    height: 25px;
+    left: 7%;
+    right: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#sliderIntroText {
+    text-align: left;
+    font: normal normal 900 20px/35px Albert Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+#sliderIntroButton {
+    display: inline-flex;
+    position: absolute;
+    right: 0%;
+    top: 10px;
+    height: 20px;
+
+    background-color: #FFFFFF;
+    border-radius: 6px;
+
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    align-items: center;
+    font: normal normal 600 9px/60px Albert Sans;
+    letter-spacing: 0px;
+    color: #E82723;
+}
+
+#textAndBar {
+    width: 83%;
+    height: 25px;
+    left: 10%;
+    right: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#barText {
+    text-align: right;
+    font: normal normal 900 20px/35px Albert Sans;
+    letter-spacing: 0px;
+    color: #E82723;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:  #FFFFFF;
+}
+
+#sliderBar {
+    font-size: 0px;
+    text-align: right;
+    width: 70%;
+
+    position: absolute;
+    right: 0%;
+    top: 10px;
+    height: 35px;
+}
+
+.bar {
+    cursor: pointer;
+    height: 2px;
+    width: 7%;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    vertical-align: 6px;
+}
+
+#bar0 {
+    border-radius: 6px 0% 0% 6px;
+    border-left: 2px solid black;
+}
+
+#bar9 {
+    border-radius: 0% 6px 6px 0%;
+    border-right: 2px solid black;
+}
+
+.highlightBar {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.arrow {
+    width: 7%;
+}
+
+.arrowLeft {
+    margin-right: 3px;
+}
+
+.arrowRight {
+    margin-left: 3px;
+}
+
 .slideContainer {
     width: 100%;
     white-space: nowrap;
@@ -10,48 +127,54 @@
 
 .sliderImages {
     width: 25%;
-}
-
-#sliderBar {
-    font-size: 0px;
-}
-
-.bar {
-    cursor: pointer;
-    height: 4px;
-    width: 8%;
-    background-color: #bbb;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    vertical-align: 8px;
-}
-
-#bar0 {
-    border-radius: 25% 0% 0% 25%;
-    border-left: 2px solid black;
-}
-
-#bar9 {
-    border-radius: 0% 25% 25% 0%;
-    border-right: 2px solid black;
-}
-
-.highlightBar {
-    background-color: white;
-    transition: background-color 0.5s ease;
+    margin-top: 8px;
 }
 
 @media (min-width: 600px) {
+    #sliderIntro {
+        height: 60px;
+    }
+
+    #sliderIntroText {
+        font-size: 4vw;
+    }
+
+    #sliderIntroButton {
+        padding: 0px 30px 0px 30px;
+        font-size: 15px;
+        border-radius: 6px;
+        height: 35px;
+    }
+
+    #textAndBar {
+        height: 60px;
+    }
+
+    #barText {
+        font-size: 4vw;
+    }
+
     .bar {
-        height: 8px;
-        width: 70px;
-        vertical-align: 6px;
+        height: 3px;
+        width: 8%;
+        vertical-align: 11px;
+    }
+
+    .arrow {
+        width: 3%;
+    }
+
+    .arrowLeft {
+        margin-right: 10px;
+    }
+    
+    .arrowRight {
+        margin-left: 10px;
     }
 
     .sliderImages {
         width: 20%;
         margin-right: 20px;
+        margin-top: 25px;
     }
 }
