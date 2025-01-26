@@ -48,6 +48,7 @@ body {
     letter-spacing: 0px;
     color: #E82723;
 }
+
 /* ------- End of SliderIntro ------------ */
 
 /* ------- Slider bar ------------ */
@@ -68,7 +69,7 @@ body {
     color: #E82723;
 
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:  #FFFFFF;
+    -webkit-text-stroke-color: #FFFFFF;
 }
 
 #sliderBar {
@@ -118,13 +119,14 @@ body {
 .arrowRight {
     margin-left: 3px;
 }
+
 /* ------- End of Slider bar ------------ */
 
 /* ------- Slider ------------ */
 .slideContainer {
     width: 100%;
     white-space: nowrap;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .sliderCards {
@@ -136,35 +138,44 @@ body {
     width: 25%;
     margin-top: 8px;
 }
+
 /* ------- End of Slider ------------ */
 
 /* ------- Ad Slider ------------ */
 .adSlideContainer {
     width: 100%;
     white-space: nowrap;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .adSliderCards {
     pointer-events: none;
     position: relative;
     left: -35px;
+    height: 100%;
+}
+
+.adSliderImageContainer {
+    --width: 11%;
+
+    display: inline-block;
+    position: relative;
+    width: var(--width);
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.adSliderImageContainerHover {
+    width: calc(var(--width) + 4px);
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .adSliderImages {
     position: relative;
-    width: 11%;
-    margin-right: 2px;
-    margin-left: 2px;
-    transition: 0.05s;
+    width: 100%;
 }
 
-.adSliderImages:hover {
-    width: 12%;
-    margin-right: 0px;
-    margin-left: 0px;
-    vertical-align: sub;
-}
 /* ------- End of Ad Slider ------------ */
 
 @media (min-width: 600px) {
@@ -204,7 +215,7 @@ body {
     .arrowLeft {
         margin-right: 10px;
     }
-    
+
     .arrowRight {
         margin-left: 10px;
     }

@@ -4,8 +4,9 @@ var sliderImageWidth = document.getElementById("basicImg").offsetWidth
 var maxSliderOffset = -9 * sliderImageWidth;
 
 var adSliderImageMargin = window.getComputedStyle(document.getElementById("basicAdImg")).marginRight; // keeps px in the string
-var adSliderImageWidth = document.getElementById("basicAdImg").offsetWidth
-    + parseInt(adSliderImageMargin.substring(0, adSliderImageMargin.length - 2)) * 2 + 4; // margin-right = margin-left
+var hoverWidth = document.getElementById("basicAdImg").offsetWidth;
+var adSliderImageWidth = hoverWidth +
+    parseInt(adSliderImageMargin.substring(0, adSliderImageMargin.length - 2)) * 2 + 4; // margin-right = margin-left
 var maxAdSliderOffset = -adSliderImageWidth * 13;
 
 const bars = document.querySelectorAll('.bar');
@@ -14,7 +15,7 @@ const sliderCards = document.querySelector('.sliderCards');
 
 const adSlider = document.querySelector('.adSlideContainer')
 const adSliderCards = document.querySelector('.adSliderCards');
-const adCards = document.querySelectorAll('.adSliderImages');
+const adCards = document.querySelectorAll('.adSliderImageContainer');
 
 let mouseMaintained = false;
 let cursorX;
@@ -47,8 +48,16 @@ adSlider.addEventListener("mousedown", (e) => {
 });
 
 adSlider.addEventListener("mousemove", (e) => {
-    if (!mouseMaintained)
+    adCards.forEach((adCard) => {
+        adCard.classList.remove('adSliderImageContainerHover');
+    });
+    if (!mouseMaintained) {
+        if ((e.offsetX) % adSliderImageWidth < hoverWidth) { // checks if pointer is over an image
+            console.log(e.offsetX);
+            adCards[Math.round((e.offsetX - adSliderCards.offsetLeft) / adSliderImageWidth)].classList.add('adSliderImageContainerHover');
+        }
         return;
+    }
 
     e.preventDefault();
 
