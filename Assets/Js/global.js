@@ -18,7 +18,7 @@ const adSliderCards = document.querySelector('.adSliderCards');
 const adCards = document.querySelectorAll('.adSliderImageContainer');
 
 let mouseMaintained = false;
-let cursorX;
+let cursorX = 0;
 let currentSlide = 0;
 
 /* slider grab */
@@ -52,10 +52,7 @@ adSlider.addEventListener("mousemove", (e) => {
         adCard.classList.remove('adSliderImageContainerHover');
     });
     if (!mouseMaintained) {
-        if ((e.offsetX) % adSliderImageWidth < hoverWidth) { // checks if pointer is over an image
-            console.log(e.offsetX);
-            adCards[Math.round((e.offsetX - adSliderCards.offsetLeft) / adSliderImageWidth)].classList.add('adSliderImageContainerHover');
-        }
+        adCards[Math.round((e.offsetX - adSliderCards.offsetLeft) / adSliderImageWidth)].classList.add('adSliderImageContainerHover');
         return;
     }
 
