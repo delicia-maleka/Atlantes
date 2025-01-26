@@ -5,7 +5,7 @@ var maxSliderOffset = -9 * sliderImageWidth;
 
 var adSliderImageMargin = window.getComputedStyle(document.getElementById("basicAdImg")).marginRight; // keeps px in the string
 var adSliderImageWidth = document.getElementById("basicAdImg").offsetWidth
-+ parseInt(adSliderImageMargin.substring(0, adSliderImageMargin.length - 2)) + 4;
+    + parseInt(adSliderImageMargin.substring(0, adSliderImageMargin.length - 2)) * 2 + 4; // margin-right = margin-left
 var maxAdSliderOffset = -adSliderImageWidth * 13;
 
 const bars = document.querySelectorAll('.bar');
@@ -14,6 +14,7 @@ const sliderCards = document.querySelector('.sliderCards');
 
 const adSlider = document.querySelector('.adSlideContainer')
 const adSliderCards = document.querySelector('.adSliderCards');
+const adCards = document.querySelectorAll('.adSliderImages');
 
 let mouseMaintained = false;
 let cursorX;

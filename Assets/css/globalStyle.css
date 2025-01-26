@@ -152,8 +152,18 @@ body {
 }
 
 .adSliderImages {
+    position: relative;
     width: 11%;
-    margin-right: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
+    transition: 0.05s;
+}
+
+.adSliderImages:hover {
+    width: 12%;
+    margin-right: 0px;
+    margin-left: 0px;
+    vertical-align: sub;
 }
 /* ------- End of Ad Slider ------------ */
 
