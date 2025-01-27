@@ -128,3 +128,21 @@ twitter.addEventListener("mouseover",()=>{
 twitter.addEventListener("mouseout",()=>{
     twitter.style.left="2%";
 })
+
+let facebook2= document.getElementById("facebookfooter");
+let twitter2 = document.getElementById("twitterfooter");
+
+facebook2.addEventListener("mouseover",()=>{
+    facebook2.style.top="-1%";
+})
+facebook2.addEventListener("mouseout",()=>{
+    facebook2.style.left="0%";
+})
+
+twitter2.addEventListener("mouseover",()=>{
+    twitter2.style.left="-1%";
+})
+twitter2.addEventListener("mouseout",()=>{
+    twitter2.style.left="0%";
+})
+

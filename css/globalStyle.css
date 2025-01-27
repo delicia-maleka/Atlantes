@@ -21,7 +21,7 @@
         background-color: white;
         width: 100%;
         height: 7%;
-        z-index: 4;
+        z-index: 5;
         left: 0px;
         top: 0px;
     }
@@ -108,7 +108,7 @@
         top: 20%;
         left: 1%;
         writing-mode: vertical-rl;
-        z-index: 4;
+        z-index: 5;
         position: fixed;
         font-family: "Albert Sans", serif;
         font-size: 35%;
@@ -222,14 +222,14 @@
         z-index: 4;
         left: 10%;
         width: 50%;
-        height:5%;
+        height: 5%;
         border-radius: 15px 15px 15px 15px;
         font-size: 20%;
         color: white;
         background-color: #E82723;
         border-style: none;
         font-family: "Albert Sans", serif;
-        top:30%;
+        top: 30%;
     }
 
     #Eve2 {
@@ -289,6 +289,130 @@
         border-radius: 50%;
         border: none;
     }
+
+    footer {
+        background-color: white;
+        height: 30%;
+        width: 110%;
+        bottom: 0%;
+        left: 0%;
+        z-index: 4;
+        position: absolute;
+    }
+
+    #logofooter {
+        position: absolute;
+        left: 10%;
+    }
+
+    #atlantesetvous {
+        position: absolute;
+        left: 40%;
+        height: 70%;
+        line-height: 80%;
+    }
+
+    #infosBonsPlansFooter {
+        top: 10%;
+        position: absolute;
+        left: 70%;
+
+    }
+
+    .textbold {
+        font-size: 45%;
+        font-family: "Albert Sans", serif;
+        font-weight: bold;
+    }
+
+    .textnorm {
+        font-size: 30%;
+        font-family: "Albert Sans", serif;
+        line-height: 1px;
+    }
+
+    #logo2 {
+        width: 50%;
+    }
+
+    #telFooter {
+        border-color: #000;
+        border-style: solid;
+        border-radius: 3px;
+        height: 15%;
+        position: absolute;
+        width: 70%;
+        border-width: 1px;
+    }
+
+    #imgtelFooter {
+        width: 10%;
+    }
+
+    #numeroFooter {
+        top: 20%;
+        position: absolute;
+        left: 20%;
+    }
+
+    #mailFooter {
+        top: 120%;
+        border-color: #000;
+        border-style: solid;
+        border-radius: 3px;
+        height: 10%;
+        position: absolute;
+        width: 70%;
+        border-width: 1px;
+    }
+
+    #imgmailFooter {
+        width: 10%;
+        top: 30%;
+        position: absolute;
+    }
+
+    #textmailFooter {
+        top: 10%;
+        position: absolute;
+        left: 20%;
+    }
+
+    #emailAreaFooter {
+        border-color: #000;
+        border-style: solid;
+        border-radius: 15px;
+        height: 15%;
+        position: relative;
+        border-width: 1px;
+        width: 80%;
+        text-align: center;
+    }
+
+    #emailTextAreaFooter {
+        width: 50%;
+        top: 0%;
+        position: relative;
+        border: none;
+    }
+
+    #emailArrowFooter {
+        width: 5%;
+        top: 0%;
+        position: relative;
+    }
+
+    #partagerouge {
+        color: red;
+    }
+
+    #facebookfooter {
+        width: 15%;
+    }
+
+    #twitterfooter {
+        width: 15%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -315,7 +439,7 @@
             background-color: white;
             width: 100%;
             height: 8%;
-            z-index: 4;
+            z-index: 5;
             left: 0px;
             top: 0px;
         }
@@ -402,7 +526,7 @@
             top: 20%;
             left: 1%;
             writing-mode: vertical-rl;
-            z-index: 4;
+            z-index: 5;
             position: fixed;
             font-family: "Albert Sans", serif;
             font-size: 65%;
@@ -519,7 +643,7 @@
             z-index: 4;
             left: 10%;
             width: 50%;
-            height:5%;
+            height: 5%;
             border-radius: 15px 15px 15px 15px;
             font-size: 50%;
             color: white;
@@ -586,6 +710,131 @@
             border-radius: 50%;
             border: none;
         }
+        footer {
+            background-color: white;
+            height: 30%;
+            width: 110%;
+            bottom: 0%;
+            left: 0%;
+            z-index: 4;
+            position: absolute;
+        }
+    
+        #logofooter {
+            position: absolute;
+            left: 10%;
+            top:10%;
+        }
+    
+        #atlantesetvous {
+            position: absolute;
+            left: 40%;
+            height: 70%;
+            line-height: 100%;
+            top:10%;
+        }
+    
+        #infosBonsPlansFooter {
+            top: 10%;
+            position: absolute;
+            left: 70%;
+    
+        }
+    
+        .textbold {
+            font-size: 60%;
+            font-family: "Albert Sans", serif;
+            font-weight: bold;
+        }
+    
+        .textnorm {
+            font-size: 50%;
+            font-family: "Albert Sans", serif;
+            line-height: 1px;
+        }
+    
+        #logo2 {
+            width: 70%;
+        }
+    
+        #telFooter {
+            border-color: #000;
+            border-style: solid;
+            border-radius: 3px;
+            height: 15%;
+            position: absolute;
+            width: 100%;
+            border-width: 1px;
+        }
+    
+        #imgtelFooter {
+            width: 10%;
+        }
+    
+        #numeroFooter {
+            top: 20%;
+            position: absolute;
+            left: 20%;
+        }
+    
+        #mailFooter {
+            top: 120%;
+            border-color: #000;
+            border-style: solid;
+            border-radius: 3px;
+            height: 10%;
+            position: absolute;
+            width: 70%;
+            border-width: 1px;
+        }
+    
+        #imgmailFooter {
+            width: 10%;
+            top: 30%;
+            position: absolute;
+        }
+    
+        #textmailFooter {
+            top: 10%;
+            position: absolute;
+            left: 20%;
+        }
+    
+        #emailAreaFooter {
+            border-color: #000;
+            border-style: solid;
+            border-radius: 15px;
+            height: 15%;
+            position: relative;
+            border-width: 1px;
+            width: 80%;
+            text-align: center;
+        }
+    
+        #emailTextAreaFooter {
+            width: 50%;
+            top: 0%;
+            position: relative;
+            border: none;
+        }
+    
+        #emailArrowFooter {
+            width: 5%;
+            top: 0%;
+            position: relative;
+        }
+    
+        #partagerouge {
+            color: red;
+        }
+    
+        #facebookfooter {
+            width: 15%;
+        }
+    
+        #twitterfooter {
+            width: 15%;
+        }
     }
 }
 
@@ -611,7 +860,7 @@
         background-color: white;
         width: 100%;
         height: 10%;
-        z-index: 4;
+        z-index: 5;
         left: 0px;
         top: 0px;
     }
@@ -698,7 +947,7 @@
         top: 40%;
         left: 1%;
         writing-mode: vertical-rl;
-        z-index: 4;
+        z-index: 5;
         position: fixed;
         font-family: "Albert Sans", serif;
         font-size: 130%;
@@ -815,7 +1064,7 @@
         z-index: 4;
         left: 10%;
         width: 50%;
-        height:5%;
+        height: 5%;
         border-radius: 15px 15px 15px 15px;
         font-size: 150%;
         color: white;
@@ -882,298 +1131,128 @@
         border-radius: 50%;
         border: none;
     }
-}
-
-/*
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    #back {
-        position: fixed;
-        left: 0px;
-        z-index: 1;
-    }
-
-    #head {
-        position: fixed;
+    footer {
         background-color: white;
+        height: 50%;
+        width: 110%;
+        bottom: 0%;
+        left: 0%;
+        z-index: 4;
+        position: absolute;
+    }
+
+    #logofooter {
+        position: absolute;
+        left: 10%;
+        top:10%;
+    }
+
+    #atlantesetvous {
+        top:10%;
+        position: absolute;
+        left: 40%;
+        height: 70%;
+        line-height: 100%;
+    }
+
+    #infosBonsPlansFooter {
+        top: 10%;
+        position: absolute;
+        left: 70%;
+
+    }
+
+    .textbold {
+        font-size: 100%;
+        font-family: "Albert Sans", serif;
+        font-weight: bold;
+    }
+
+    .textnorm {
+        font-size: 80%;
+        font-family: "Albert Sans", serif;
+        line-height: 1px;
+    }
+
+    #logo2 {
+        width: 50%;
+    }
+
+    #telFooter {
+        border-color: #000;
+        border-style: solid;
+        border-radius: 3px;
+        height: 15%;
+        position: absolute;
         width: 100%;
-        height: 150px;
-        z-index: 4;
-        left: 0px;
-        top: 0px;
+        border-width: 1px;
     }
 
-    #logo {
-        top: 30px;
-        left: 30px;
+    #imgtelFooter {
+        width: 8%;
+    }
+
+    #numeroFooter {
+        top: 0%;
+        position: absolute;
+        left: 20%;
+    }
+
+    #mailFooter {
+        top: 120%;
+        border-color: #000;
+        border-style: solid;
+        border-radius: 3px;
+        height: 15%;
+        position: absolute;
+        width: 70%;
+        border-width: 1px;
+    }
+
+    #imgmailFooter {
+        width: 10%;
+        top: 30%;
         position: absolute;
     }
 
-    .pop {
+    #textmailFooter {
+        top: 0%;
+        position: absolute;
+        left: 20%;
+    }
+
+    #emailAreaFooter {
+        border-color: #000;
+        border-style: solid;
+        border-radius: 15px;
         position: relative;
-        padding: 15px 32px;
-        top: 50px;
-        left: 200px;
-        width: 300px;
-        height: 27px;
-        font-size: 17px;
+        border-width: 1px;
+        width: 80%;
         text-align: center;
-        color: rgb(0, 0, 0);
-        border-style: none;
-        background-color: transparent;
-        font-weight: bold;
-        letter-spacing: 0px;
-        font-family: "Albert Sans", serif;
     }
 
-    #recherche {
-        top: 60px;
-        left: 1450px;
-        position: absolute;
-
-    }
-
-    #rectangle {
-        top: 55px;
-        left: 1200px;
-        position: absolute;
-        width: 200px;
-        text-align: center;
-        background-color: #F4E500;
-        border-style: none;
-        border-radius: 15px 15px 15px 15px;
-
-    }
-
-    #ouvert {
-        font-family: "Albert Sans", serif;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    #heure {
-        font-family: "Albert Sans", serif;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    #a {
-        font-family: "Albert Sans", serif;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    #affiche {
-        background-color: #000000;
-        top: 130px;
-        left: 0px;
-        position: absolute;
-        width: 1515px;
-        text-align: center;
-        color: rgb(255, 255, 255);
-        font-family: "Albert Sans", serif;
-        font-size: 15px;
-        font-weight: medium;
-    }
-
-    #reseau {
-        top: 400px;
-        left: 20px;
-        writing-mode: vertical-rl;
-        z-index: 4;
-        position: fixed;
-        width: 10px;
-        font-family: "Albert Sans", serif;
-        font-size: 30px;
-        font-weight: bold;
-        font-style: italic;
-        text-orientation: sideways-right;
-        rotate: 180deg;
-        color: white;
-        text-decoration-color: #000000;
-        text-shadow:
-            -2px 1px 0 black,
-            2px -1px 0 black,
-            -3px -2px 0 black,
-            3px 2px 0 black,
-            -1px 2px 0 black,
-            1px -2px 0 black,
-            -3px -1px 0 black,
-            3px 1px 0 black;
-    }
-
-    #facebook {
-        top: 650px;
-        left: 45px;
-        position: fixed;
-    }
-
-    #twitter {
-        top: 700px;
-        left: 45px;
-        position: fixed;
-    }
-
-    #prim {
-        position: absolute;
-        left: 1060px;
-        width: 300px;
-        top: 260px;
-        z-index: 4;
-    }
-
-    #MD {
-        position: absolute;
-        left: 1090px;
-        width: 300px;
-        top: 280px;
-        font-size: 40px;
-        color: #000;
-        font-style: italic;
-        font-family: "Brush Script MT", cursive;
-        z-index: 4;
-    }
-
-    #Eve {
-        position: absolute;
-        left: 1090px;
-        width: 300px;
-        top: 480px;
-        color: #000;
-        z-index: 4;
-    }
-
-    #even {
-        font-family: "Albert Sans", serif;
-        font-weight: bold;
-        font-size: 40px;
-    }
-
-    #dateOuvert {
-        font-family: "Albert Sans", serif;
-        font-weight: normal;
-        font-size: 30px;
-    }
-
-    #rectangleOrange1 {
-        background-color: #EC1C24;
-        width: 1520px;
-        height: 2000px;
-        left: 0px;
-        right: 0px;
-        position: absolute;
-        z-index: 2;
-    }
-
-    #slide1 {
-        position: absolute;
-        z-index: 3;
-        top: 200px;
-        height: 580px;
-        width: 1003px;
-        left: 5px;
-        border-radius: 15px 15px 15px 15px;
-    }
-
-    #slide2 {
-        position: absolute;
-        z-index: 3;
-        top: 200px;
-        height: 580px;
-        width: 1003px;
-        left: 1030px;
-        border-radius: 15px 15px 15px 15px;
-        right: 1515px;
-    }
-
-    #slide3 {
-        position: absolute;
-        z-index: 3;
-        top: 200px;
-        height: 580px;
-        width: 1003px;
-        left: 2050px;
-        border-radius: 15px 15px 15px 15px;
-        right: 1515px;
-    }
-
-    #Eve2 {
-        position: absolute;
-        left: 2100px;
-        width: 300px;
-        top: 280px;
-        color: #000;
-        z-index: 4;
-    }
-
-    #even2 {
-        font-family: "Albert Sans", serif;
-        font-weight: bold;
-        font-size: 40px;
-    }
-
-    #dateOuvert2 {
-        font-family: "Albert Sans", serif;
-        font-weight: normal;
-        font-size: 30px;
-    }
-
-    #img2but {
-        position: absolute;
-        z-index: 4;
-        top: 670px;
-        left: 1090px;
-        width: 200px;
-        height: 50px;
-        border-radius: 15px 15px 15px 15px;
-        font-size: 20px;
-        color: white;
-        background-color: #E82723;
-        border-style: none;
-        font-family: "Albert Sans", serif;
-    }
-
-    #point1 {
-        position: absolute;
-        z-index: 5;
-        background-color: rgb(255, 255, 255);
-        opacity: 90%;
-        top: 740px;
-        left: 800px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
+    #emailTextAreaFooter {
+        width: 50%;
+        top: 0%;
+        position: relative;
         border: none;
     }
 
-    #point2 {
-        position: absolute;
-        z-index: 5;
-        background-color: rgb(255, 255, 255);
-        opacity: 50%;
-        top: 740px;
-        left: 840px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        border: none;
+    #emailArrowFooter {
+        width: 5%;
+        top: 0%;
+        position: relative;
     }
 
-    #point3 {
-        position: absolute;
-        z-index: 5;
-        background-color: rgb(255, 255, 255);
-        opacity: 50%;
-        top: 740px;
-        left: 880px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        border: none;
+    #partagerouge {
+        color: red;
     }
-}*/
+
+    #facebookfooter {
+        width: 15%;
+    }
+
+    #twitterfooter {
+        width: 15%;
+    }
+}
