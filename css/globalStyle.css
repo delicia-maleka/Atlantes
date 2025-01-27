@@ -1,3 +1,493 @@
+@font-face {
+    font-family: Albert Sans;
+    src: url(Fonts/AlbertSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Brush Script MT;
+    src: url(Fonts/BRUSHSCI.TTF);
+}
+
+/* ------- SliderIntro ------------ */
+#slider2 {
+    top: 80%;
+    position: absolute;
+}
+
+#sliderIntro {
+    width: 86%;
+    height: 25px;
+    left: 7%;
+    right: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#sliderIntroText {
+    text-align: left;
+    font: normal normal 900 20px/35px Albert Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+#sliderIntroButton {
+    display: inline-flex;
+    position: absolute;
+    right: 0%;
+    top: 10px;
+    height: 20px;
+
+    background-color: #FFFFFF;
+    border-radius: 6px;
+
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    align-items: center;
+    font: normal normal 600 9px/60px Albert Sans;
+    letter-spacing: 0px;
+    color: #E82723;
+}
+
+/* ------- End of SliderIntro ------------ */
+
+/* ------- Slider bar ------------ */
+#textAndBar {
+    width: 83%;
+    height: 25px;
+    left: 10%;
+    right: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+#barText {
+    text-align: right;
+    font: normal normal 900 20px/35px Albert Sans;
+    letter-spacing: 0px;
+    color: #E82723;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+#sliderBar {
+    font-size: 0px;
+    text-align: right;
+    width: 70%;
+
+    position: absolute;
+    right: 0%;
+    top: 10px;
+    height: 35px;
+}
+
+.bar {
+    cursor: pointer;
+    height: 1px;
+    width: 7%;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    vertical-align: 6px;
+}
+
+#bar0 {
+    border-radius: 6px 0% 0% 6px;
+    border-left: 2px solid black;
+}
+
+#bar9 {
+    border-radius: 0% 6px 6px 0%;
+    border-right: 2px solid black;
+}
+
+.highlightBar {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+.arrow {
+    width: 7%;
+}
+
+.arrowLeft {
+    margin-right: 3px;
+}
+
+.arrowRight {
+    margin-left: 3px;
+}
+
+/* ------- End of Slider bar ------------ */
+
+/* ------- Slider ------------ */
+.slideContainer {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.sliderCards {
+    pointer-events: none;
+    position: relative;
+}
+
+.sliderImages {
+    width: 25%;
+    margin-top: 8px;
+}
+
+/* ------- End of Slider ------------ */
+
+/* ------- Infos et Bons Plans ------------ */
+#rectangleOrange2 {
+    top: 110%;
+    position: absolute;
+    z-index: 3;
+    background-color: #EC1C24;
+    left: -3%;
+    width: 113%;
+    height: 30%;
+}
+
+#infosBonsPlans {
+    position: relative;
+    left: 50%;
+    top: -30px;
+    transform: translate(-50%);
+
+    width: 70%;
+    background-color: #F8DF00;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+#adSliderModeTips {
+    text-align: left;
+    font: italic normal bold 23px/0px Albert Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    left: 10px;
+    position: relative;
+
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+#infosBonsPlansText {
+    text-align: center;
+    font: normal normal 900 3.1vw/10px Albert Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    width: 40%;
+    left: 30%;
+    position: relative;
+}
+
+#emailArea {
+    display: inline-flex;
+    width: 40%;
+    left: 30%;
+    position: relative;
+}
+
+#emailTextArea {
+    width: 100%;
+    border-radius: 90px;
+
+    font: normal normal normal 8px/14px Albert Sans;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+#emailArrow {
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    text-align: right;
+}
+
+#adSliderConfidentialite {
+    text-align: center;
+    font: normal normal normal 6px/7px Albert Sans;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+#infosBonsPlansSpacing {
+    height: 10px;
+}
+
+/* ------- End of Infos et Bons Plans ------------ */
+
+/* ------- Ad Slider ------------ */
+.adSlideContainer {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.adSliderCards {
+    pointer-events: none;
+    position: relative;
+    left: -35px;
+    height: 100%;
+}
+
+.adSliderImageContainer {
+    --width: 11%;
+
+    display: inline-block;
+    position: relative;
+    width: var(--width);
+    margin-right: 2px;
+    margin-left: 2px;
+    vertical-align: text-top;
+}
+
+.adSliderImageContainerHover {
+    width: calc(var(--width) + 4px);
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.adSliderImages {
+    position: relative;
+    width: 100%;
+}
+
+/* ------- End of Ad Slider ------------ */
+
+/* box part */
+
+
+.container1 {
+    z-index: 3;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    /*  Vertically center content */
+    justify-content: center;
+    /* horizentally center content */
+    width: 100%;
+    margin: auto;
+
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: red;
+    border: 5px solid #FFFFFF;
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+    opacity: 1;
+    margin: 10px;
+
+    /* for the child */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* horizentally center content */
+    transition: all .20s ease;
+
+}
+
+.box p {
+    /* for the text */
+    text-align: center;
+    font: normal normal bold 12px/26px Albert Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: all .55s ease;
+
+}
+
+.box img {
+    width: 93px;
+    height: 87px;
+    transition: filter .55s ease;
+
+}
+
+.box:hover {
+    background-color: white;
+
+    transform: translateY(-10px);
+}
+
+.box:hover p {
+    color: black;
+}
+
+.box:hover img {
+    filter: brightness(0) saturate(100%);
+}
+
+
+/* end box part */
+
+
+/*  box part2 */
+
+.container2a {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 170%;
+    align-items: left;
+    z-index: 3;
+
+}
+
+.container2-part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    /*  Vertically center content */
+    justify-content: center;
+    /* horizentally center content */
+    width: 100%;
+    margin: 40px 0px 20px 0px;
+    flex-wrap: wrap;
+}
+
+.box1 {
+
+    border: 5px solid #FFFFFF;
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+    opacity: 1;
+    margin: 10px;
+
+    /* for the child */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* horizentally center content */
+    transition: all .55s ease;
+
+}
+
+.box1 p {
+    /* for the text */
+    text-align: center;
+    font: normal normal bold 12px/26px Albert Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+
+
+}
+
+.box1 img {
+    width: 107px;
+    height: 99px;
+}
+
+.box1:hover {
+    background-color: red;
+
+    transform: translateY(-10px);
+}
+
+
+#sliderIntro1 {
+    width: 86%;
+    height: 25px;
+    left: 7%;
+    right: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#sliderIntroText1 {
+    text-align: left;
+    font: normal normal 900 50px/35px Albert Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+
+}
+
+#sliderIntroButton1 {
+
+    display: inline-flex;
+
+
+
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    align-items: center;
+    font: normal normal 600 10px/60px Albert Sans;
+    letter-spacing: 0px;
+    color: #E82723;
+
+}
+
+#barText1 {
+    text-align: left;
+    font: normal normal 900 40px/35px Albert Sans;
+    letter-spacing: 0px;
+    color: #E82723;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+
+
+}
+
+#textAndButton1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sliderIntroText1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font: normal normal 600 13px/60px Albert Sans;
+    flex-wrap: wrap;
+    line-height: normal;
+}
+
+.sliderIntroText1 span {
+    font-weight: bold;
+    font: normal normal 600 17px/60px Albert Sans;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
 @media (max-width: 600px) {
 
     html {
@@ -39,7 +529,7 @@
         left: 10%;
         width: 15%;
         height: 100%;
-        font-size: 20%;
+        font-size: 10%;
         text-align: center;
         color: rgb(0, 0, 0);
         border-style: none;
@@ -117,6 +607,8 @@
         text-orientation: sideways-right;
         rotate: 180deg;
         color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000000;
     }
 
     #facebook {
@@ -137,7 +629,7 @@
     #rectangleOrange1 {
         background-color: #EC1C24;
         width: 110%;
-        height: 80%;
+        height: 150%;
         left: 0%;
         position: absolute;
         z-index: 2;
@@ -259,7 +751,7 @@
         z-index: 5;
         background-color: rgb(255, 255, 255);
         opacity: 90%;
-        top: 30%;
+        top: 20%;
         left: 45%;
         height: 2.5%;
         border-radius: 50%;
@@ -271,7 +763,7 @@
         z-index: 5;
         background-color: rgb(255, 255, 255);
         opacity: 50%;
-        top: 30%;
+        top: 20%;
         left: 50%;
         height: 2.5%;
         border-radius: 50%;
@@ -283,7 +775,7 @@
         z-index: 5;
         background-color: rgb(255, 255, 255);
         opacity: 50%;
-        top: 30%;
+        top: 20%;
         left: 55%;
         height: 2.5%;
         border-radius: 50%;
@@ -293,9 +785,9 @@
     footer {
         background-color: white;
         height: 30%;
-        width: 110%;
-        bottom: 0%;
-        left: 0%;
+        width: 115%;
+        top: 129%;
+        left: -3%;
         z-index: 4;
         position: absolute;
     }
@@ -535,6 +1027,8 @@
             text-orientation: sideways-right;
             rotate: 180deg;
             color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000000;
         }
 
         #facebook {
@@ -710,53 +1204,54 @@
             border-radius: 50%;
             border: none;
         }
+
         footer {
             background-color: white;
             height: 30%;
-            width: 110%;
-            bottom: 0%;
-            left: 0%;
+            width: 112%;
+            top: 150%;
+            left: -3%;
             z-index: 4;
             position: absolute;
         }
-    
+
         #logofooter {
             position: absolute;
             left: 10%;
-            top:10%;
+            top: 10%;
         }
-    
+
         #atlantesetvous {
             position: absolute;
             left: 40%;
             height: 70%;
             line-height: 100%;
-            top:10%;
+            top: 10%;
         }
-    
+
         #infosBonsPlansFooter {
             top: 10%;
             position: absolute;
             left: 70%;
-    
+
         }
-    
+
         .textbold {
             font-size: 60%;
             font-family: "Albert Sans", serif;
             font-weight: bold;
         }
-    
+
         .textnorm {
             font-size: 50%;
             font-family: "Albert Sans", serif;
             line-height: 1px;
         }
-    
+
         #logo2 {
             width: 70%;
         }
-    
+
         #telFooter {
             border-color: #000;
             border-style: solid;
@@ -766,17 +1261,17 @@
             width: 100%;
             border-width: 1px;
         }
-    
+
         #imgtelFooter {
             width: 10%;
         }
-    
+
         #numeroFooter {
             top: 20%;
             position: absolute;
             left: 20%;
         }
-    
+
         #mailFooter {
             top: 120%;
             border-color: #000;
@@ -787,19 +1282,19 @@
             width: 70%;
             border-width: 1px;
         }
-    
+
         #imgmailFooter {
             width: 10%;
             top: 30%;
             position: absolute;
         }
-    
+
         #textmailFooter {
             top: 10%;
             position: absolute;
             left: 20%;
         }
-    
+
         #emailAreaFooter {
             border-color: #000;
             border-style: solid;
@@ -810,31 +1305,54 @@
             width: 80%;
             text-align: center;
         }
-    
+
         #emailTextAreaFooter {
             width: 50%;
             top: 0%;
             position: relative;
             border: none;
         }
-    
+
         #emailArrowFooter {
             width: 5%;
             top: 0%;
             position: relative;
         }
-    
+
         #partagerouge {
             color: red;
         }
-    
+
         #facebookfooter {
             width: 15%;
         }
-    
+
         #twitterfooter {
             width: 15%;
         }
+
+        /*slider2*/
+        #slider2 {
+            top: 110%;
+            position: absolute;
+        }
+
+        /*container2a*/
+        .container2a {
+            top: 120%;
+        }
+
+        /*rectangleorange2*/
+        #rectangleOrange2 {
+            height: 50%;
+        }
+
+        /*boxes*/
+        .container1 {
+            z-index: 3;
+            top: 60%;
+        }
+
     }
 }
 
@@ -956,6 +1474,8 @@
         text-orientation: sideways-right;
         rotate: 180deg;
         color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000000;
     }
 
     #facebook {
@@ -1131,12 +1651,13 @@
         border-radius: 50%;
         border: none;
     }
+
     footer {
         background-color: white;
         height: 50%;
-        width: 110%;
-        bottom: 0%;
-        left: 0%;
+        width: 113%;
+        top: 190%;
+        left: -3%;
         z-index: 4;
         position: absolute;
     }
@@ -1144,11 +1665,11 @@
     #logofooter {
         position: absolute;
         left: 10%;
-        top:10%;
+        top: 10%;
     }
 
     #atlantesetvous {
-        top:10%;
+        top: 10%;
         position: absolute;
         left: 40%;
         height: 70%;
@@ -1254,5 +1775,150 @@
 
     #twitterfooter {
         width: 15%;
+    }
+
+    /*slider2*/
+    #slider2 {
+        top: 60%;
+        position: absolute;
+    }
+
+    /*container2a*/
+    .container2a {
+        top: 270%;
+    }
+
+    /*rectangleorange2*/
+    #rectangleOrange2 {
+        height: 100%;
+    }
+
+    /*boxes*/
+    .container1 {
+        z-index: 3;
+        top: 40%;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    #sliderIntro {
+        height: 60px;
+    }
+
+    #sliderIntroText {
+        font-size: 4vw;
+    }
+
+    #sliderIntroButton {
+        padding: 0px 30px 0px 30px;
+        font-size: 15px;
+        border-radius: 6px;
+        height: 35px;
+    }
+
+    #textAndBar {
+        height: 60px;
+    }
+
+    #barText {
+        font-size: 4vw;
+    }
+
+    .bar {
+        height: 3px;
+        width: 8%;
+        vertical-align: 11px;
+    }
+
+    .arrow {
+        width: 3%;
+    }
+
+    .arrowLeft {
+        margin-right: 10px;
+    }
+
+    .arrowRight {
+        margin-left: 10px;
+    }
+
+    .sliderImages {
+        width: 20%;
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+
+    #infosBonsPlans {
+        width: 60%;
+        border-radius: 11px;
+        margin-bottom: 50px;
+    }
+
+    #adSliderModeTips {
+        left: 5%;
+        font-size: 3vw;
+
+        -webkit-text-stroke-width: 2.5px;
+    }
+
+    #infosBonsPlansText {
+        width: 60%;
+        left: 20%;
+    }
+
+    #emailArea {
+        width: 60%;
+        left: 20%;
+    }
+
+    #emailTextArea {
+        font-size: 10px;
+    }
+
+    #emailArrow {
+        width: 16px;
+        height: 16px;
+    }
+
+    #adSliderConfidentialite {
+        font-size: 10px;
+    }
+
+    #infosBonsPlansSpacing {
+        height: 20px;
+    }
+
+    .adSliderImageContainer {
+        --width: 9%;
+        width: var(--width);
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .adSliderImageContainerHover {
+        width: calc(var(--width) + 16px);
+    }
+
+
+}
+
+
+
+
+@media (min-width: 760px) {
+    #barText1 {
+        margin-left: 100px;
+    }
+
+    #sliderIntroText1 {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1020px) {
+    #sliderIntroButton1 {
+        margin-right: 50px;
     }
 }
