@@ -7,7 +7,7 @@
     <title>Maquette 0 - Version 0</title>
     <link rel="stylesheet" href="css\globalStyle.css">
     <meta name="description" content="">
-    <link rel="icon" href="Img\logo.png" type="image/x-icon">
+    <link rel="icon" href="Assets/Img/logo.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
@@ -29,13 +29,13 @@
 
     <header>
         <div id="head">
-            <img id="logo" src="Img\logo.png">
+            <img id="logo" src="Assets/Img/logo.png">
 
             <button class="pop">Boutiques & Restaurants</button>
             <button class="pop">Actus & Bons plans</button>
             <button class="pop">Infos pratiques</button>
 
-            <img id="recherche" src="Img\Icon_feather_search.png">
+            <img id="recherche" src="Assets/Img/Icon_feather_search.png">
 
             <p id="rectangle"><span id="ouvert">ouvert - </span><span id="heure">9:30 </span><span id="a">à
                 </span><span id="heure">19:30</span></p>
@@ -47,8 +47,8 @@
                 <p>#enmodepartage</p>
 
             </div>
-            <img id="facebook" src="Img\facebook.png">
-            <img id="twitter" src="Img\twitter.png">
+            <img id="facebook" src="Assets/Img/facebook.png">
+            <img id="twitter" src="Assets/Img/twitter.png">
         </div>
     </header>
     <!-- ------------------------------------------------------>
@@ -62,14 +62,15 @@
         <!-- ------------------ SLIDER 1 -------------------------->
         <!-- ------------------------------------------------------>
         <div id="slider1">
-            <img id="slide1" src="Img\finaleImage1.png">
-            <img id="slide2" src="Img\finaleImage3.png">
-            <img id="slide3" src="Img\finaleImage4.jpg">
+            <img id="slide1" src="Assets/Img/finaleImage1.png">
+            <img id="slide2" src="Assets/Img/finaleImage3.png">
+            <img id="slide3" src="Assets/Img/finaleImage4.jpg">
 
             <div id="textimg2">
-                <img id="prim" src="Img\primark.png">
+                <img id="prim" src="Assets/Img/primark.png">
                 <p id="MD">Mode & Déco</p>
-                <p id="Eve"><span id="even">Evènement</span> <br> <span id="dateOuvert"> Primark ouvrira ses portes le 21 Février 2023 </span></p>
+                <p id="Eve"><span id="even">Evènement</span> <br> <span id="dateOuvert"> Primark ouvrira ses portes le
+                        21 Février 2023 </span></p>
 
                 <button id="img2but">En savoir plus</button>
             </div>
@@ -86,9 +87,109 @@
         <!-- ------------------ END SLIDER 1 ---------------------->
         <!-- ------------------------------------------------------>
 
+        <!-- ------------------------------------------------------>
+        <!-- ------------------ SLIDER 2 ---------------------------->
+        <!-- ------------------------------------------------------>
+        <div id="slider2">
+            <div id="sliderIntro">
+                <p id="sliderIntroText">Actus &</p>
+                <button id="sliderIntroButton" onclick="actusBonsPlans()">Toutes les actus & bons plans</button>
+            </div>
+            <!-- slider bar -->
 
+            <div id="textAndBar">
+                <p id="barText">bons plans</p>
+                <div id="sliderBar">
+                    <img class="arrow arrowLeft" src="Assets/Img/Icon awesome-arrow-left.png" onclick="previousSlide()">
+                    <span id="bar0" class="bar highlightBar" onclick="firstSlide(0)"></span>
+                    <span id="bar1" class="bar" onclick="firstSlide(1)"></span>
+                    <span id="bar2" class="bar" onclick="firstSlide(2)"></span>
+                    <span id="bar3" class="bar" onclick="firstSlide(3)"></span>
+                    <span id="bar4" class="bar" onclick="firstSlide(4)"></span>
+                    <span id="bar5" class="bar" onclick="firstSlide(5)"></span>
+                    <span id="bar6" class="bar" onclick="firstSlide(6)"></span>
+                    <span id="bar7" class="bar" onclick="firstSlide(7)"></span>
+                    <span id="bar8" class="bar" onclick="firstSlide(8)"></span>
+                    <span id="bar9" class="bar" onclick="firstSlide(9)"></span>
+                    <img class="arrow arrowRight" src="Assets/Img/Icon awesome-arrow-right.png" onclick="nextSlide()">
+                </div>
+            </div>
+
+
+            <div class="slideContainer">
+                <div class="sliderCards">
+                    <img id="basicImg" class="sliderImages" src="Assets/Img\img1.png">
+                    <img class="sliderImages" src="Assets/Img\img2.png">
+                    <img class="sliderImages" src="Assets/Img\img3.png">
+                    <img class="sliderImages" src="Assets/Img\img4.png">
+                    <img class="sliderImages" src="Assets/Img\img5.png">
+                    <img class="sliderImages" src="Assets/Img\img1.png">
+                    <img class="sliderImages" src="Assets/Img\img2.png">
+                    <img class="sliderImages" src="Assets/Img\img3.png">
+                    <img class="sliderImages" src="Assets/Img\img4.png">
+                    <img class="sliderImages" src="Assets/Img\img5.png">
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------>
+        <!-- ------------------ END SLIDER 2 ------------------------>
+        <!-- ------------------------------------------------------>
     </div> <!-- fermeture de la div id="rectangleorange1" -->
 
+    <!-- ------------------------------------------------------>
+    <!-- ------------------ AD SLIDER ---------------------------->
+    <!-- ------------------------------------------------------>
+    <div id="rectangleOrange2">
+        <div id="infosBonsPlans">
+            <p id="adSliderModeTips">#enmodetips</p>
+            <p id="infosBonsPlansText">Infos & bons plans</p>
+            <div id="emailArea">
+                <textarea id="emailTextArea" name="email" rows="1" cols="50">Votre email</textarea>
+                <img id="emailArrow" src="Assets/Img/emailArrow.png">
+            </div>
+            <p id="adSliderConfidentialite">En renseignant votre adresse e-mail, vous acceptez de recevoir des
+                informations de la part des enseignes et vous prenez connaissance de notre Politique de
+                confidentialité.</p>
+            <div id="infosBonsPlansSpacing"></div>
+        </div>
+
+        <div class="adSlideContainer">
+            <div class="adSliderCards">
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/intersport.png"></div>
+                <div class="adSliderImageContainer" id="basicAdImg"><img class="adSliderImages"
+                        src="Assets/Img/pharmacie.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/bruit_cuisine.png">
+                </div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/fnac.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/h&m.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/macdo.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/sephora.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/marionnaud.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/normal.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/jd.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/carrefour.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/boulanger.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/delarte.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/intersport.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/pharmacie.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/bruit_cuisine.png">
+                </div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/fnac.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/h&m.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/macdo.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/sephora.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/marionnaud.png"></div>
+                <div class="adSliderImageContainer"><img class="adSliderImages" src="Assets/Img/normal.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------>
+    <!-- ------------------ END AD SLIDER ------------------------>
+    <!-- ------------------------------------------------------>
+
+    <!-- ---------------------------------------------------------->
+    <!---------------------- FOOTER ----------------------->
+    <!-- ---------------------------------------------------------->
     <footer>
         <div class="container">
         </div>
