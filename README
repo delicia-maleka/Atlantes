@@ -1,18 +1,73 @@
+# Site vitrine – Centre commercial Atlantes
 
-----COLORS ------
-primary to use : 
-#FFFFFF white
-#707070 grey
-#707070  red ( for background)
-#ec1c24 light red
-#F4E500 yellow
-#000000 black
+Ce projet est une **maquette de site web** en **HTML, CSS et JavaScript** représentant le site d’un centre commercial.  
+Il met en avant les **boutiques**, les **actualités**, les **bons plans** et les **informations pratiques**.
 
-----FONTS------
--For all :
-ALBERt sans 
+---
 
--Slides 1 in + :
-Script MT
+## Présentation du projet
+- Site web **statique**
+- Réalisé dans un cadre **pédagogique**
+- Objectif : reproduire une **interface moderne et interactive**
 
+---
+
+## Fonctionnalités principales
+### Header
+- Logo du centre commercial
+- Menu de navigation
+- Horaires d’ouverture
+- Réseaux sociaux
+
+### Sliders & contenus dynamiques
+- Slider principal avec événements
+- Slider **Actus & Bons plans**
+- Slider des boutiques et catégories
+- Slider publicitaire des enseignes
+
+### Services proposés
+- Accès et horaires
+- Objets trouvés
+- Plan du centre
+- Accessibilité
+- Informations complémentaires
+
+### Footer
+- Coordonnées
+- Liens utiles
+- Réseaux sociaux
+- Inscription à la newsletter
+
+---
+
+## Structure du projet
+- `index.html` : structure principale du site
+- `css/` : styles globaux du site
+- `js/` : scripts JavaScript (sliders, interactions)
+- `Img/` : images et icônes utilisées
+
+---
+
+## Technologies utilisées
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Google Fonts**
+- Responsive design
+
+---
+
+## Objectif pédagogique
+Ce projet permet de :
+- Comprendre la structure d’une page **HTML complète**
+- Travailler la **mise en page CSS**
+- Créer des **animations et sliders en JavaScript**
+- Organiser un projet front‑end de manière claire
+- Reproduire une **maquette professionnelle**
+
+---
+
+## Lancement du projet
+- Ouvrir le fichier `index.html` dans un navigateur
+- Aucun serveur ni installation requise
 
